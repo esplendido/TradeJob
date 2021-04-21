@@ -1,0 +1,23 @@
+price_info_lint: dict = {
+    "highPrice": "過去24時間の最高値",
+    "lowPrice": "過去24時間の最安値",
+    "count": "341081",
+    "priceChange": "過去24時間の価格変化（lastPrice - openPrice）",
+    "priceChangePercent": "過去24時間の価格変化率",
+    "quoteVolume": "514731576.00629553",
+    "lastId": "58860547",
+    "bidQty": "買い最高値の数量",
+    "bidPrice": "買い最高値",
+    "askQty": "売り最安値の数量",
+    "askPrice": "売り最安値",
+    "openTime": "日時（始値）",
+    "closeTime": "日時（終値）",
+    "prevClosePrice": "前足の最終価格（終値）",
+    "lastQty": "最後の取引数量",
+    "openPrice": "開始の価格（始値）",
+    "symbol": "通貨ペア(BTCUSDT)",
+    "volume": "過去24時間の出来高",
+    "weightedAvgPrice": "8150.30602838",
+    "firstId": "58519467",
+    "lastPrice": "最終の価格（終値）"
+}
