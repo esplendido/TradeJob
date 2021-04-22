@@ -16,13 +16,18 @@ class BinanceAPI:
     def get_ticker(self, pair):
         return self.__exe_func('get_ticker', symbol=pair)
 
+    # 指定通貨の統計情報を取得
+    def get_symbol_ticker(self, pair):
+        return self.__exe_func('get_symbol_ticker', symbol=pair)
+
     # 指定通貨の資産情報を取得
     def get_asset(self, symbol):
         return self.__exe_func('get_asset_balance', asset=symbol)
 
     # 資産情報を取得
-    def get_balances(self, symbol):
-        return self.__exe_func('get_account')['balances']
+    def get_balances(self):
+        balances = self.__exe_func('get_account')['balances']
+        return [b for b in balances if float(b['free']) > 0]
 
     def __exe_func(self, name, **arg):
         try:

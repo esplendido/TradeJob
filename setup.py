@@ -11,7 +11,7 @@ setup(
     entry_points={
         "console_scripts": [
             "trade_info = trade_job.trade_info_main:main",
-            "trade_info_day = trade_job.trade_info_day:main",
+            "trade_info_daily = trade_job.trade_info_daily:main",
         ]
     }
 )
