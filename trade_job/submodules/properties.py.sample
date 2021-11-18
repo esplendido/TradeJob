@@ -1,0 +1,18 @@
+import os
+
+PROJECT_NAME: str = 'trade_job'
+
+MONGO_HOST = "mongoDBのホスト名"
+MONGO_PORT = mongoDBのport
+
+ROOT_DIR: str = os.path.normpath(os.path.join(os.path.dirname(__file__), '..'))
+DATA_DIR: str = f'{root_dir}/data'
+
+NOTIFIED_INTERVAL: int = 60  # 指定通貨の通知間隔(分単位)
+REFERENCE_RATE_30m: float = 15  # 変化率の通知基準(%)
+REFERENCE_RATE_5m: float = 5  # 変化率の通知基準(%)
+RATE_INTERVAL: int = 30  # 変化率の通知間隔(分単位)
+
+BINANCE_API_KEY: str = 'BinanceのAPIキー'
+BINANCE_API_SECRET: str = 'Binanceの秘密キー'
+LINE_NOTIFY_TOKEN: str = 'LINE Notifyのアクセストークン'

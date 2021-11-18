@@ -3,9 +3,9 @@ from setuptools import setup, find_packages
 setup(
     name="trade_job",
     version="1.0.0",
-    install_requires=["dropbox", "python-binance", "requests"],
+    install_requires=["pymongo", "python-binance", "requests"],
     extras_require={
-        "develop": ["wheel"]
+        "develop": ["wheel", "pipdeptree"]
     },
     packages=find_packages(),
     entry_points={

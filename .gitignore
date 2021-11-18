@@ -10,6 +10,7 @@ dist/
 venv/
 *.egg-info/
 
-# 
-trade_job/data/*
-!trade_job/data/__init__.py
+#
+properties.py
+trade_job/data/job_data.pickle
+trade_job/data/TradeJob.csv
